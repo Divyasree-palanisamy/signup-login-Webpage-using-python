@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webpage Creation Guide</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #333;
+            
+        }
+        
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: antiquewhite;
+            padding: 10px 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            color: black;
+        }
+        .navbar a {
+            color: #333;
+            text-decoration: none;
+            padding: 10px 20px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .navbar a:hover {
+            background-color: #feb47b;
+            color: #fff;
+        }
+      
+        .navbar .brand {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .content {
+            padding: 20px;
+            text-align: center;
+        }
+       
+        .section {
+            display: none;
+            margin: 40px 0;
+        }
+        .section.active {
+            display: block;
+        }
+        .section h2 {
+            color: rgb(154, 34, 178);
+            margin-bottom: 10px;
+            font-size: 32px;
+        }
+        .section p {
+            font-size: 18px;
+        }
+        .section ul {
+            text-align: left;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body background="/static/images (1).jfif">
+    <div class="navbar">
+        <div class="brand">Webpage Guide</div>
+        <div>
+            <a href="#home" onclick="showSection('home')">Home</a>
+            <a href="#about" onclick="showSection('about')">About</a>
+            <a href="#guidelines" onclick="showSection('guidelines')">Guidelines</a>
+        </div>
+    </div>
+    <div class="content">
+        <div id="home" class="section active">
+            <h2>Welcome to the Webpage Creation Guide</h2>
+            <br>
+            <br>
+            <br>
+            <h1><b>Successfully Logged in!!!</b></h1>
+        </div>
+        <div id="about" class="section">
+            <h2>About This Guide</h2>
+            <br>
+            <br>
+            <p><b>This guide provides step-by-step instructions on how to create and design webpages. Whether you're a beginner or an experienced developer, you'll find valuable information and resources to enhance your web development skills.</p>
+            <p>Our goal is to make web development accessible to everyone. We break down complex topics into easy-to-understand sections, complete with examples and best practices.</p>
+            <p>From the basics of HTML and CSS to advanced JavaScript frameworks and libraries, this guide covers a wide range of topics. Each section includes practical examples and code snippets to help you apply what you've learned.</p>
+            <p>We also emphasize the importance of design principles and user experience. A well-designed website not only looks good but also provides a seamless and enjoyable experience for users.</p>
+            <p>Stay tuned for regular updates and new content. Happy coding!</b></p>
+        </div>
+        <div id="guidelines" class="section">
+            <h2>Webpage Creation Guidelines</h2>
+            <br>
+            <br>
+
+            <p><b>Follow these guidelines to create effective and user-friendly webpages:</b></p>
+            <ul>
+                <li><b>Ensure your website is responsive and works well on all devices.</b></li>
+                <br>
+                <li><b>Use a consistent layout and design throughout your site.</b></li>
+                <br>
+                <li><b>Optimize images and media for faster loading times.</b></li>
+                <br>
+                <li><b>Provide clear navigation to improve user experience.</b></li>
+                <br>
+                <li><b>Follow web accessibility standards to make your site inclusive.</b></li>
+                <br>
+                <li><b>Test your website on different browsers and devices.</b></li>
+                <br>
+                <li><b>Use semantic HTML tags to improve SEO and accessibility.</b></li>
+                <br>
+                <li><b>Keep your design simple and clutter-free.</b></li>
+                <br>
+                <li><b>Use contrasting colors to enhance readability.</b></li>
+                <br>
+                <li><b>Ensure that your content is relevant and up-to-date.</b></li>
+            </ul>
+            <br>
+            <p><b>By following these guidelines, you can create websites that are not only visually appealing but also functional and accessible to a wide range of users.</b></p>
+            
+            <p><b>Remember, the key to a great website is a combination of good design, quality content, and seamless user experience. Happy coding!</b></p>
+        </div>
+    </div>
+    <script>
+        function showSection(sectionId) {
+            var sections = document.querySelectorAll('.section');
+            sections.forEach(function(section) {
+                section.classList.remove('active');
+            });
+            document.getElementById(sectionId).classList.add('active');
+        }
+    </script>
+</body>
+</html>

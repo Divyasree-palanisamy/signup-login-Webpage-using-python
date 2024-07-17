@@ -1,0 +1,5 @@
+create database dbs;
+use dbs;
+create table dtable (username varchar(50) ,passwrd varchar(50));
+insert into dtable(username,passwrd) values('Prag','123');
+select * from dtable;

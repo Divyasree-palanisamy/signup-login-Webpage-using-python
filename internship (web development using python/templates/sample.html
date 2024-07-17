@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Webpage</title>
+    <style>
+        /* Reset default margin and padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Global styles */
+        body, html {
+            font-family: Arial, sans-serif;
+            height: 100%;
+            scroll-behavior: smooth;
+        }
+
+        h1 {
+            background-color: rgb(255, 196, 252);
+            text-align: center;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        p, ul {
+            color: rgb(255, 102, 0);
+            font-size: large;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        .brand {
+            text-align: center;
+            color: cornsilk;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: rgb(255, 20, 20);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            padding: 10px 20px;
+        }
+
+        .navbar a {
+            color: cornsilk;
+            text-decoration: none;
+            padding: 10px 20px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .navbar a:hover {
+            background-color: #feb47b;
+            color: #fff;
+        }
+
+        .section {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .section h2 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        h4 {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: rgb(220, 20, 70);
+        }
+    </style>
+</head>
+<body background="/static/download (1).jfif">
+    <header>
+        <!-- Navigation bar -->
+        <nav class="navbar">
+            <div class="brand"><b>My Website</b></div>
+            <div>
+                <a href="#home"><b>Home</b></a>
+                <a href="#about"><b>About</b></a>
+                <a href="#services"><b>Services</b></a>
+                <a href="#contact"><b>Contact</b></a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="section">
+            <div class="content">
+                <h1>Welcome to My Website</h1><br>
+                <p>This is a simple website designed during my internship of web development using Python.</p>
+                <br><p>We are dedicated to providing high-quality services that meet your needs and exceed your expectations. Our team of experts works diligently to ensure that every project we undertake is completed to the highest standards.</p>
+               <br> <p>We believe in the power of technology to transform lives and businesses. That's why we are committed to staying at the forefront of the latest trends and innovations in web development.</p>
+               <br> <p>Thank you for visiting our website. We hope you find the information here helpful and informative.</p>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section">
+            <div class="content">
+                <h1>About Us</h1><br>
+                <p>We are passionate about creating beautiful and functional websites that are made in an attractive manner and can be used efficiently. To know more about us, look at our services and contact us using the contact information below. Thank you.</p>
+           <br>     <p>Our journey began with a simple idea: to make the internet a better place. Over the years, we have grown into a full-service web development company, helping businesses and individuals bring their visions to life.</p>
+               <br> <p>We pride ourselves on our ability to understand our clients' needs and deliver solutions that are not only effective but also elegant and user-friendly. Our team of talented designers and developers works closely with clients to ensure that every detail is perfect.</p>
+               <br> <p>We believe in the power of collaboration and are always looking for new and exciting projects to work on. Whether you are a small business owner looking to establish an online presence or a large corporation in need of a comprehensive web solution, we are here to help.</p>
+                <br><p>Thank you for considering us for your web development needs. We look forward to working with you and helping you achieve your goals.</p>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="section">
+            <div class="content">
+                <h1>Our Services</h1>
+                <ul><br>
+                    <li>Web Design</li>
+                    <li>Web Development</li>
+                    <li>SEO Optimization</li>
+                </ul><br>
+                <p>Our web design services are focused on creating visually appealing and user-friendly websites that engage your audience and drive conversions. We use the latest design trends and technologies to ensure your website stands out from the competition.</p>
+             <br>   <p>Our web development services cover everything from front-end development to back-end programming. We build robust, scalable, and secure websites that are tailored to meet your specific needs.</p>
+                <br><p>SEO optimization is crucial for improving your website's visibility on search engines. Our SEO experts will help you develop and implement strategies to boost your rankings, drive traffic, and increase your online presence.</p>
+                <br><p>In addition to these core services, we also offer website maintenance, e-commerce solutions, content management systems, and more. Whatever your web development needs, we have the expertise to deliver exceptional results.</p>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <div class="content">
+                <h1>Contact Us</h1><br>
+                <p>Feel free to reach out to us for any inquiries or collaborations. We are always happy to hear from you and discuss how we can help you achieve your goals.</p>
+                <p>You can contact us by phone, email, or through our social media channels. Our team is available to answer your questions and provide support whenever you need it.</p>
+                <p>Whether you have a specific project in mind or just want to learn more about our services, we are here to help. Don't hesitate to get in touch with us today.</p>
+              <br>  <h4>Contact: 1234567890</h4><br>
+                <h4>Email: begin@gmail.com</h4>
+                
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 My Website. All rights reserved.</p>
+    </footer>
+</body>
+</html>
